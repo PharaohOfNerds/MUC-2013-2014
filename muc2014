@@ -1,4 +1,3 @@
-
 // ==================================================
 // ==================================================
 
@@ -45,6 +44,20 @@ void setMotorValues(int direction);
 // ==================================================
 
 // MAIN PROGRAM
+
+colorSpeed(colorLeftFront,colorRightFront,colorLeftBack,colorRightBack){
+  if(colorLeftBack==YELLOW || colorRightBack==YELLOW){
+    motor1 = 50;
+    motor2 = 50;
+  }elseif(colorLeftBack==RED || colorRightBack==RED){
+    runTimer
+    motor1 = 0;
+    motor2 = 0;
+  }else{
+    motor1 = 100;
+    motor2 = 100;
+  }
+}
 
 setMotorValues(int driveDirection){
   if(driveDirection==1){
